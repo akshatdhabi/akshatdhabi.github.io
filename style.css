@@ -116,16 +116,22 @@ html{
         
 }
 
+/*
 .box:hover{
     background-color: blue;
     color: white;
 } 
+*/
 
 .box:active{
     box-shadow: 0px 0px 0px 0px;
     -moz-box-shadow: 0px 0px 0px 0px;
     -webkit-box-shadow: 0px 0px 0px 0px;
     top: 4px;
+    background-color: blue;
+    color: white;
+    background-color: blue;
+    color: white;
 }
 
 #box1{
