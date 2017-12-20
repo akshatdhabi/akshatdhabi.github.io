@@ -1,2 +1,0 @@
-# akshatdhabi.github.io
-Portfolio
