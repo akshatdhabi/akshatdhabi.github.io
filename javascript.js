@@ -62,22 +62,30 @@
                     y= Math.floor(Math.random(y)*10+1);
                     document.getElementById("question").innerHTML=x + "x" + y;
                     z = x*y;
-                    buttonCounter = [0,0,0,0];
-                    buttonCounter[Math.floor(Math.random(x)*4)] = z; 
+                    buttonCounter = [z];
+                    var randomPosition = [Math.floor(Math.random(x)*4+1)] ; 
+                    document.getElementById("box"+randomPosition).innerHTML=z;
                     var random;
                     for(i=1; i<5; i++)
                        {
-//                           
-                           if(buttonCounter[i-1]==z){
-                               document.getElementById("box"+i).innerHTML=z;
-//                                   
+                          
+                           if(i==randomPosition){
+                               
+                               window.alert("hi");
+                                   
                            }
                            else{
-                               
-                               document.getElementById("box"+i).innerHTML= Math.floor(Math.random()*10+1+z+7);
+                               var wrongAnswer;
+                               do{
+                                    wrongAnswer = (1+ Math.round(9*Math.random()))*(1+ Math.round(9*Math.random())); //a wrong answer
+                                    
+                               }while(buttonCounter.indexOf(wrongAnswer)>-1)
+                                        document.getElementById("box"+i).innerHTML = wrongAnswer;
+                                                    buttonCounter.push(wrongAnswer);
 
                                
                            }
+                           
                            
                        }
                             
