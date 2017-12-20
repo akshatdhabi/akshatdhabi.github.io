@@ -71,7 +71,7 @@
                           
                            if(i==randomPosition){
                                
-                               window.alert("hi");
+                              
                                    
                            }
                            else{
