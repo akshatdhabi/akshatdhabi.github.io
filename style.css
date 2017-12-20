@@ -1,0 +1,215 @@
+body{
+    font-family: sans-serif
+}
+#container {
+/*    border: 1px black solid;*/
+    width:1050px;
+    height:100px;
+    margin: 0px auto;
+   
+}
+
+#heading {
+    float: left;
+    color: white;
+    padding: 10px 0px 0px 20px;
+    
+}
+
+#search {
+    float: right;
+    padding: 40px 20px;
+    
+}
+
+#header {
+    margin-top: 20px;
+    background: #1565C0;
+    height: 100px;
+    margin-bottom: 0px;
+     box-shadow: 2px 4px 1px grey;
+}
+
+#heading h1 {
+        font-weight: bolder;
+        padding-left: 57px;
+/*        font-size: 40px;*/
+
+}
+
+#submit {
+    background: #1565C0;
+    color: white;
+    border: 0px solid white;
+    font-size: 16px;
+    font-weight: bold;
+        
+}
+
+.clear {
+    clear: both;
+}
+
+#text {
+    padding: 2px;
+    border:white 1px solid;
+    color:#1565C0;
+    font-size: 15px;
+    
+}
+
+
+#menu {
+/*    float: none;*/
+    background: #1565C0;
+    border: 10px solid #1565C0;
+    height: 80px;
+    box-shadow: 2px 3px 1px grey;
+} 
+#menu ul{
+    list-style: none;
+    
+    
+}
+
+#menu ul li{
+    float: left;
+    padding: 10px 30px; 
+    border-right: 0.2px #5C6BC0 solid;
+}
+
+#menu ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 25px; 
+    transition: font-size 0.3s;
+    -webkit-transition: font-size 0.3s;
+    -o-transition: font-size 0.3s;
+    -moz-transition: font-size 0.3s;
+    
+}
+
+#menu ul li:last-child{
+    border-right: none;
+}
+
+#menu ul li a:hover, #menu ul li a.act{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+#banner {
+    height: 250px;
+/*    background: url(images/Banner.jpg)  ;*/
+    background-image: url(images/Banner.jpg) ;
+    background-size: cover;
+    box-shadow: 3px 3px 1px grey;
+
+}
+
+#banner h3 {
+    color: white;
+    font-size: 35px;
+    padding: 55px 40px 0px 30px;
+}
+
+#banner p {
+    color: white;
+    padding: 0px 40px 10px 30px; 
+    font-size: 20px;
+    text-align: justify;    
+}
+
+.sidebar {
+    background: #1565C0;
+    height: 600px;
+    border: 0px #0D47A1 solid;
+/*    border-radius: 10px;*/
+    width: 500px;
+    margin: 40px 0px 20px 0px;
+    box-shadow: 3px 3px 1px grey;
+    
+}
+
+
+#rightsidebar {
+    float: right;
+}
+
+#leftsidebar {
+    float: left
+}
+
+.sidebar h3{
+    color: white;
+    padding: 10px 22px;
+    font-size: 25px;
+}
+
+.sidebar ul{
+    color: white;
+    list-style-image: url(images/arrow.png);
+    
+}
+
+#leftsidebar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    transition: font-size 0.3s;
+    -webkit-transition: font-size 0.3s;
+    -o-transition: font-size 0.3s;
+    -moz-transition: font-size 0.3s;
+    
+    
+}
+
+#leftsidebar ul li {
+      padding-bottom: 15px; 
+}
+
+#rightsidebar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    transition: font-size 0.3s; 
+    -webkit-transition: font-size 0.3s;
+    -o-transition: font-size 0.3s;
+    -moz-transition: font-size 0.3s;
+}
+#rightsidebar ul li {
+
+    padding-bottom: 30px;
+}
+
+
+#rightsidebar ul li a:hover{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#leftsidebar ul li a:hover{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+#footer {
+    margin-top: 20px;
+    background: #1565C0;
+    height: 100px;
+    margin-bottom: 0px;
+     box-shadow: 2px 4px 1px grey;
+      margin-bottom: 20px;
+}
+
+#footer p {
+    color: white;
+    font-size: 15;
+    font-weight: bold;
+    padding: 30px;
+  
+}
+
