@@ -71,7 +71,7 @@
                           
                            if(i==randomPosition){
                                
-                              
+//                               window.alert("hi");
                                    
                            }
                            else{
@@ -110,7 +110,7 @@ document.getElementById("box1").onclick= function(){
     
     if(playing==1)
         {
-             if(buttonCounter[0]!==0)
+             if(document.getElementById("box1").innerHTML==z)
              {
                    document.getElementById("scoreValue").innerHTML= score+=1;
              generateQuestion();
@@ -137,7 +137,7 @@ document.getElementById("box2").onclick= function(){
     
     if(playing==1)
         {
-             if(buttonCounter[1]!==0)
+             if(document.getElementById("box2").innerHTML==z)
              {
              document.getElementById("scoreValue").innerHTML= score+=1;
              generateQuestion();
@@ -164,7 +164,7 @@ document.getElementById("box3").onclick= function(){
     
     if(playing==1)
         {
-             if(buttonCounter[2]!==0)
+             if(document.getElementById("box3").innerHTML==z)
              {
             document.getElementById("scoreValue").innerHTML= score+=1;
              generateQuestion();
@@ -189,7 +189,7 @@ document.getElementById("box4").onclick= function(){
     
     if(playing==1)
         {
-             if(buttonCounter[3]!==0)
+             if(document.getElementById("box4").innerHTML==z)
              {
                    document.getElementById("scoreValue").innerHTML= score+=1;
              generateQuestion();
