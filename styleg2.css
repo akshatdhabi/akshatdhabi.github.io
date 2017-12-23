@@ -1,0 +1,43 @@
+.demo-card-wide.mdl-card {
+  width: 600px;
+  margin: 100px auto;
+    
+
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 276px;
+  background: #1565C0;
+  overflow:inherit;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+#submitNum {
+    position: absolute;
+    left: 430px;
+    top:360px
+}
+
+#userNum {
+    
+    
+}
+
+.textField {
+    position: absolute;
+    left: 20px;
+}
+
+#displayScreen {
+    padding: 0px;
+    position: absolute;
+    top :15px;
+        
+}
+
+#displayCard {
+    position: absolute;
+    right: 50px;
+    
+}
