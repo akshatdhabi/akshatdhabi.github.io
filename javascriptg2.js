@@ -52,6 +52,8 @@ document.getElementById("submitNum").onclick = function(){
                              lives=0;
                              document.getElementById("displayCard").textContent="Lives left : none ";
                              playCounter=false;
+                             document.getElementById("startReset").innerHTML="Start Game";
+
                              
                              
                          
@@ -65,6 +67,8 @@ document.getElementById("submitNum").onclick = function(){
                 document.getElementById("displayScreen").innerHTML="Sorry! You loose. No worries! You can always play again!" ;
                 document.getElementById("userNum").value="";
                 playCounter=false;
+                document.getElementById("startReset").innerHTML="Reset Game";
+
             }
             
         }
