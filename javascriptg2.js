@@ -48,7 +48,7 @@ document.getElementById("submitNum").onclick = function(){
                     else{
                              
                              document.getElementById("userNum").value="";
-                             document.getElementById("displayScreen").innerHTML="Correct! You win!" ;
+                             document.getElementById("displayScreen").innerHTML="Correct! You win! The number was " + randomNum ;
                              lives=0;
                              document.getElementById("displayCard").textContent="Lives left : none ";
                              playCounter=false;
