@@ -28,21 +28,36 @@ $(function(){
     fruitGenerator();
     }
     });
-    
+
     $("#fruit1").mouseover(function(){
       score++;
-      $("#scoreValue").html(score); 
-      $("#sound")[0].play();//plays sound. 
+      $("#scoreValue").html(score);
+      $("#sound")[0].play();//plays sound.
         //stop fruit
         clearInterval(action);
         //hide fruit
         $("#fruit1").hide("explode",{ pieces: 4 }, 390);
         //new fruit
         setTimeout(fruitGenerator,400);
-        
-        
-    
-       
+
+
+
+
+    });
+    $("#fruit1").click(function(){
+      score++;
+      $("#scoreValue").html(score);
+      $("#sound")[0].play();//plays sound.
+        //stop fruit
+        clearInterval(action);
+        //hide fruit
+        $("#fruit1").hide("explode",{ pieces: 4 }, 390);
+        //new fruit
+        setTimeout(fruitGenerator,400);
+
+
+
+
     });
     //slice fruit
     //play sound
@@ -59,7 +74,7 @@ $(function(){
     //1. create a random fruit
     $("#fruit1").show();
     chooseFruit();//chooses random fruit
-    //generate random position 
+    //generate random position
     $("#fruit1").css({'left' : Math.round(Math.random()*550),'top':10 });
     //generate random step
     step = 1+Math.round(2*Math.random());
@@ -71,11 +86,11 @@ $(function(){
     $("#fruit1").css("top",$("#fruit1").position().top + step);
     //check if fruit is too low
     if($("#fruit1").position().top > $("#fruitBox").height()){
-    //check trails left 
+    //check trails left
     if(trialsLeft>1){
         $("#fruit1").show();
         chooseFruit();//chooses random fruit
-        //generate random position 
+        //generate random position
         $("#fruit1").css({'left' : Math.round(Math.random()*550),'top':10 });
         //generate random step
         step = 0.5+Math.round(Math.random());
@@ -96,12 +111,12 @@ $(function(){
     function chooseFruit(){
     $("#fruit1").attr("src","images/"+fruits[Math.floor(Math.random()*7)]+".png");
     }
-    
+
     function stopAction()
     {
         clearInterval(action);
         $("#fruit1").hide();
-        
+
     }
 
 });
