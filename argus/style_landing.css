@@ -8,7 +8,7 @@ html, body, {
 .bgdrop {
   height: 100%;
   width: 100%;
-  background: url(images/backdrop_large.jpg)no-repeat;
+  background: url(images/backdrop.svg)no-repeat;
   background-size: cover;
   margin: auto;
   color: #fff;
@@ -34,7 +34,7 @@ p {
   height: 80px;
   width: 80px;
   /* position: absolute; */
-  margin-top: 2%;
+  margin-top: 3%;
 }
 
 .btn-flat {
@@ -111,5 +111,11 @@ footer ul li a i:active {
   }
   footer ul {
     margin-top: 0px;
+  }
+}
+
+@media (min-width:1920px) {
+  .logo {
+    margin-top: 40%;
   }
 }
