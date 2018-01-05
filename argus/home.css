@@ -1,0 +1,49 @@
+body {
+  background: #212121;
+  color: white;
+}
+
+.parallax-container {
+  height: 250px;
+}
+
+#dropdown1 li a {
+  color: white;
+}
+
+i:hover {
+  cursor: default;
+}
+
+.side-nav li a {
+  color: white;
+}
+
+.side-nav li:hover, nav li a:hover {
+  background: purple;
+}
+
+.promo h1 {
+  text-align: center;
+}
+
+.promo h1 i {
+  font-size: 200%;
+}
+
+.promo p {
+  text-align: justify;
+}
+
+.promo {
+  margin-top: 2%;
+}
+
+.blackOverlay {
+  margin: 0px;
+  padding: 0px;
+  height: inherit;
+  width: inherit;
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+}
