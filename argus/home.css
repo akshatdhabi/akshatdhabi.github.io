@@ -3,8 +3,19 @@ body {
   color: white;
 }
 
+.brand-logo img {
+  max-height: 80px;
+  max-width: 80px;
+}
+
 .parallax-container {
   height: 250px;
+}
+
+.parallax-container h4 {
+  position: absolute;
+  bottom: 10px;
+  font-weight: bolder:
 }
 
 #dropdown1 li a {
@@ -20,6 +31,10 @@ i:hover {
 }
 
 .side-nav li:hover, nav li a:hover {
+  background: purple;
+}
+
+.act_color {
   background: purple;
 }
 
@@ -46,4 +61,41 @@ i:hover {
   width: inherit;
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
+}
+
+.card-panel span p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.card-image img {
+  background-size: cover;
+  padding: 5px;
+}
+
+.card-image {
+  border: #424242 5px solid;
+}
+
+footer {
+  margin-bottom: 5%;
+}
+
+footer li {
+  min-width: 80px;
+  display: inline-block;
+  font-size: 250%;
+  padding-right: 5%;
+}
+
+footer li .btn {
+  border 1px purple solid;
+}
+
+footer ul li a i {
+  color: white;
+}
+
+footer ul li a i:active {
+  color: black;
 }
