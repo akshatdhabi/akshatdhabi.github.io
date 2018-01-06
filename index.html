@@ -1,46 +1,57 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Maths Game</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=yes" >
-        <link rel="stylesheet" href="style.css">
 
-    
-    </head>
-    
-    <body>
-    <div id="container">
-        <div id="score">
-            Score: <span id="scoreValue">0</span>
-        </div>
-        
-        <div id="correct">
-        Correct!
-        </div>
-        <div id="wrong">
-        Wrong!
-        </div>
-        <div id="question">
-            
-        </div>
-        <div id="instruction">
-            Click on the correct answer!
-        </div>
-        <div id="choices">
-            <div id="box1" class="box"></div>
-            <div id="box2" class="box"></div>
-            <div id="box3" class="box"></div>
-            <div id="box4" class="box"></div>
-        </div>
-        <div id="startreset" class="start" onclick="startReset()"> Start Game</div>
-        <div id="time">
-            Time remaining : <span id="timevalue">60</span> sec
-        </div>
-        <div id="gameOver">
-            
-        </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Akshat Dhabi</title>
+</head>
+
+<body>
+  <!--Particle Container-->
+  <div id="particles-js"></div>
+  <!--Content Container-->
+  <div class="container wrap">
+    <h4 class=" heading left">
+      <strong>Hi,</strong><br/>I am <span class="mob">Akshat Dhabi</span> <br />I am a Front-end designer/developer <br />
+      I design websites that run across all platforms.
+    </h4>
+
+
+  </div>
+  <!--Nav Bar-->
+  <nav class=" white z-depth-0">
+    <div class="nav-wrapper white ">
+      <a href="#!" class="brand-logo black-text ">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li class="active"><a href="">About</a></li>
+        <li><a href="sass.html">Skills</a></li>
+        <li><a href="sass.html">Web Design/Development</a></li>
+        <li><a href="sass.html">Graphic design</a></li>
+        <li><a href="badges.html">Contact me</a></li>
+      </ul>
     </div>
-        <script src="javascript.js"></script>
-    </body>
+  </nav>
+  <!--Main Container-->
+  <div class="container">
+    <img src="img/akshat_dhabi.jpg" class="circle display_image left responsive-img" alt="Profile picture">
+    <p class="intro flow-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa facere dolorem ipsa veritatis sunt officiis, adipisci quibusdam doloribus enim ea ad illum ullam error magnam repellat. Autem libero iste voluptate esse possimus voluptas quas illo est
+      tempora velit deserunt consectetur facilis optio fugiat laboriosam, aperiam voluptatum eos! Molestias, eligendi, debitis.</p>
+
+  </div>
+  <!--Scripts-->
+  <!--jQuery-->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <!-- Materialized JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/particles.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
 </html>
