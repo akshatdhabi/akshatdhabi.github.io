@@ -1,5 +1,4 @@
 $(function() {
-  AOS.init();
   $(".dropdown-button ").dropdown({
     hover: true
   });
@@ -9,6 +8,5 @@ $(function() {
   $(".button-collapse ").sideNav();
   $('.parallax ').parallax();
   $('.slider ').slider();
-
 
 });

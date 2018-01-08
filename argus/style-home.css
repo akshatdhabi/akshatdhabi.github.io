@@ -4,18 +4,25 @@ body {
 }
 
 .brand-logo img {
-  max-height: 80px;
-  max-width: 80px;
+  min-height: 40px;
+  max-height: 55px;
+  max-width: 240px;
+}
+
+blockquote {
+  border-left: #448aff 4px solid;
 }
 
 .parallax-container {
-  height: 250px;
+  height: 150px;
 }
 
-.parallax-container h4 {
-  position: absolute;
-  bottom: 10px;
-  font-weight: bolder:
+nav ul a {
+  display: inline-block;
+}
+
+.slider {
+  margin-top: 2%;
 }
 
 #dropdown1 li a {
@@ -31,11 +38,11 @@ i:hover {
 }
 
 .side-nav li:hover, nav li a:hover {
-  background: purple;
+  background: #448aff;
 }
 
 .act_color {
-  background: purple;
+  background: #448aff;
 }
 
 .promo h1 {
@@ -77,8 +84,13 @@ i:hover {
   border: #424242 5px solid;
 }
 
+.service h4, .service h3 {
+  color: #42a5f5;
+}
+
 footer {
   margin-bottom: 5%;
+  padding-left: 2%;
 }
 
 footer li {
@@ -86,10 +98,6 @@ footer li {
   display: inline-block;
   font-size: 250%;
   padding-right: 5%;
-}
-
-footer li .btn {
-  border 1px purple solid;
 }
 
 footer ul li a i {

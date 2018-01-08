@@ -2,18 +2,16 @@
 <html>
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--Import materialize.css-->
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  <title>Argus Entertainment</title>
-  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-  <link rel="stylesheet" type="text/css" href="home.css" />
-  <link rel="stylesheet" type="text/css" href="anims/aos.css" />
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <!--Let browser know website is optimized for mobile-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style-home.css">
   <script src="https://use.fontawesome.com/30456cdbc6.js"></script>
+  <link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+  <title>Argus Entertainment</title>
 </head>
 
 <body>
@@ -23,78 +21,40 @@
     <nav class="z-depth-0">
       <!--Drop down content-->
       <ul id="dropdown1" class=" grey darken-4 dropdown-content">
-        <li><a href="">About Us</a></li>
-        <li><a href="">Our Mantras</a></li>
-        <li><a href="">Our Team</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="mantra.html">Our Mantras</a></li>
+        <li><a href="team.html">Our Team</a></li>
       </ul>
       <ul id="dropdown2" class=" grey darken-4 dropdown-content">
-        <li><a href="">About Us</a></li>
-        <li><a href="">Our Mantras</a></li>
-        <li><a href="">Our Team</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="mantra.html">Our Mantras</a></li>
+        <li><a href="team.html">Our Team</a></li>
       </ul>
       <div class="nav-wrapper grey darken-4">
         <!-- <a href="" class="right black-text brand-logo">Logo</a> -->
         <a class="brand-logo right" alt=""><img src="images/logo_big.png" ></a>
         <a href="#" data-activates="mobile" class=" left button-collapse"><i class="material-icons icon-black">menu</i></a>
         <ul id="nav-mobile" class="left hide-on-med-and-down ">
-          <li class="act_color"><a href="">Home</a></li>
-          <li><a href="">Services</a></li>
+          <li class="act_color"><a href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="#" class="dropdown-button" data-activates="dropdown1">About us<i class="material-icons right">arrow_drop_down</i> </a></li>
-          <li><a href="">Our Clients</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li><a href="clients.html">Our Clients</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <!-- Mobile sidebar-->
         <ul class="side-nav grey darken-4  " id="mobile">
-          <li class="act_color"><a href="">Home</a></li>
-          <li><a href="">Services</a></li>
+          <li class="act_color"><a href="home.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="#" class="dropdown-button2" data-activates="dropdown2">About us<i class="material-icons right white-text">arrow_drop_down</i> </a></li>
-          <li><a href="">Our Clients</a></li>
-          <li><a href="">Contact Us</a></li>
+          <li><a href="clients.html">Our Clients</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
         </ul>
-
       </div>
       <!-- Nav bar ends-->
     </nav>
-    <!--container ends-->
-  </div>
-  <!-- Fixed action button -->
-  <div class="fixed-action-btn click-to-toggle hide-on-small-only">
-    <a class="waves-effect waves-light btn pink darken-1">Get a quote</a> </div>
-  <!--parallax-->
-  <div class="parallax-container">
-    <div class="parallax"><img src="images/backdrop.svg"></div>
-    <div class="container">
-      <h4 class="center-align grey-text text-darken-4">Welcome to Argus Entertainment</h4>
-    </div>
-  </div>
-  <!--content container-->
-  <div class="container">
-    <!--promotion table-->
-    <div class="row promo" data-aos="fade-zoom-in">
+    <!--Slider-->
 
-      <div class="col m4 s12 hoverable">
-        <h1><i class="material-icons">star</i></h1>
-        <p>
-          We provide the world class Event Management Services. The services provided by us showcases substance and perfection in an optimum way. Our resonable prices us have been highly appreciated by large number of beneficiaries.
-        </p>
-      </div>
-      <div class="col m4 s12 hoverable">
-        <h1><i class="material-icons">sms
-</i></h1>
-        <p>
-          We own and operate few of our own organization websites in India so we can promote your event to all over India and NRI residents. If required, we are also able to source local databases to send invitation emails and texts to potential visitors.
-        </p>
-      </div>
-
-      <div class="col m4 s12 hoverable">
-        <h1><i class="material-icons">favorite</i></h1>
-        <p>
-          We are also efficient in providing you with a suitable venue for your event. We also provide you with services like guest speaker, hosts, bands, comedians, Bollywood stars, singers, item-dancers to ensure the event is memorable for your guests.
-        </p>
-      </div>
-      <!--Promo Ends-->
-    </div>
-    <div class="  slider hoverable" data-aos="fade-up">
+    <div class="slider">
       <ul class="slides">
         <li>
           <div class="blackOverlay"></div>
@@ -146,42 +106,76 @@
             <h4>NDTV Car and Bike awards</h4>
           </div>
         </li>
-
-
       </ul>
     </div>
-    <!--Slider Ends-->
-    <ul data-aos="fade-up">
+  </div>
+  <!--Carousel Ends-->
+  <!--parallax-->
+
+  <div class="container">
+    <!--promotion table-->
+    <div class="row promo">
+
+      <div class="col m4 s12 hoverable">
+        <h1><i class="material-icons">star</i></h1>
+        <p>
+          We provide the world class Event Management Services. The services provided by us showcases substance and perfection in an optimum way. Our resonable prices us have been highly appreciated by large number of beneficiaries.
+        </p>
+      </div>
+      <div class="col m4 s12 hoverable">
+        <h1><i class="material-icons">sms
+</i></h1>
+        <p>
+          We own and operate few of our own organization websites in India so we can promote your event to all over India and NRI residents. If required, we are also able to source local databases to send invitation emails and texts to potential visitors.
+        </p>
+      </div>
+
+      <div class="col m4 s12 hoverable">
+        <h1><i class="material-icons">favorite</i></h1>
+        <p>
+          We are also efficient in providing you with a suitable venue for your event. We also provide you with services like guest speaker, hosts, bands, comedians, Bollywood stars, singers, item-dancers to ensure the event is memorable for your guests.
+        </p>
+      </div>
+      <!--Promo Ends-->
+    </div>
+
+    <!-- Fixed action button -->
+    <div class="fixed-action-btn click-to-toggle hide-on-small-only">
+      <a class="waves-effect waves-light btn blue accent-2">Get a quote</a> </div>
+    <!--Carousel-->
+
+    <ul>
       <li>
         <h5>Highlights of the services we provide:</h5>
       </li>
       <li>
         <blockquote>
-          We provide a complete <strong class="purple-text text-lighten-3">end to end event management capabilities</strong> for our customers so you can focus on your core business whilst we manage your event. We provide you with a single contact point
+          We provide a complete <strong class="blue-text text-lighten-3">end to end event management capabilities</strong> for our customers so you can focus on your core business whilst we manage your event. We provide you with a single contact point
           for all your event management and provide consolidated reports to your company allowing you to host an amazing event that exceeds high standards of execution within your budget. </blockquote>
       </li>
       <li>
         <blockquote>
-          We are engaged in providing the most sensational service of <strong class="purple-text text-lighten-3"> Corporate Theme Parties</strong>. The base of our services lies in our approach where attention is paid to each and every aspect. We heartily
+          We are engaged in providing the most sensational service of <strong class="blue-text text-lighten-3"> Corporate Theme Parties</strong>. The base of our services lies in our approach where attention is paid to each and every aspect. We heartily
           invite you to avail our services that too at most competitive price.</blockquote>
       </li>
       <li>
-        <blockquote><strong class="purple-text text-lighten-3">Promotional activity in the public hub</strong>, like Malls, PVR’S, Market area, call center Road Shows, Magic shows, games & Quiz shows, Distribution of pamphlets, company catalogs, canopy display etc.</blockquote>
+        <blockquote><strong class="blue-text text-lighten-3">Promotional activity in the public hub</strong>, like Malls, PVR’S, Market area, call center Road Shows, Magic shows, games & Quiz shows, Distribution of pamphlets, company catalogs, canopy display etc.</blockquote>
       </li>
       <li>
         <blockquote>
-          Various <strong class="purple-text text-lighten-3">themes like Punjabi, Rajasthani, Manipuri, Adiwasi, Awadh, Village Theme</strong> and some other Innovative themes.
+          Various <strong class="blue-text text-lighten-3">themes like Punjabi, Rajasthani, Manipuri, Adiwasi, Awadh, Village Theme</strong> and some other Innovative themes.
         </blockquote>
       </li>
       <li>
         <blockquote>
-          Give exclusive <strong class="purple-text text-lighten-3">publicity through print & electronic media, FM Radio, etc.</strong>
+          Give exclusive <strong class="blue-text text-lighten-3">publicity through print & electronic media, FM Radio, etc.</strong>
       </li>
     </ul>
+
     <!--Client Row-->
     <div class="row ">
       <!-- column for client restimonials-->
-      <div class="col m6 s12 left" data-aos="fade-up">
+      <div class="col m6 s12 left">
         <h5>Feedback from our clients:</h5>
         <div class="card-panel grey darken-3 ">
           <span class="white-text ">"I would like to thank Argus Entertainment for organizing our event. It was widely appreciated and our guests loved it. "</span>
@@ -198,67 +192,67 @@
       </div>
 
       <!-- column for client image-->
-      <div class="col m6 s12 right" data-aos="fade-up">
+      <div class="col m6 s12 right">
         <h5>Some of our clients:</h5>
       </div>
 
-      <div class="col m2 s4 " data-aos="fade-up">
+      <div class="col m2 s4 ">
         <div class="card hoverable">
           <div class="card-image">
             <img src="images/clients/thumbs_Honda.jpg">
           </div>
         </div>
       </div>
-      <div class="col m2 s4 " data-aos="fade-up">
+      <div class="col m2 s4 ">
         <div class="card hoverable">
           <div class="card-image">
             <img src="images/clients/thumbs_Coca-Cola.jpg">
           </div>
         </div>
       </div>
-      <div class="col m2 s4 " data-aos="fade-up">
+      <div class="col m2 s4 ">
         <div class="card hoverable">
           <div class="card-image">
             <img src="images/clients/thumbs_AMD.jpg">
           </div>
         </div>
       </div>
-      <div class="col m2 s4 " data-aos="fade-up">
+      <div class="col m2 s4 ">
         <div class="card hoverable">
           <div class="card-image">
             <img src="images/clients/thumbs_CNN.jpg">
           </div>
         </div>
       </div>
-      <div class="col m2 s4 " data-aos="fade-up">
+      <div class="col m2 s4 ">
         <div class="card hoverable">
           <div class="card-image">
             <img src="images/clients/thumbs_Intel.jpg">
           </div>
         </div>
       </div>
-      <div class="col m2 s4 " data-aos="fade-up">
+      <div class="col m2 s4 ">
         <div class="card hoverable">
           <div class="card-image">
             <img src="images/clients/thumbs_microsoft.jpg">
           </div>
         </div>
       </div>
-      <div class="col m2 s4 " data-aos="fade-up">
+      <div class="col m2 s4 ">
         <div class="card hoverable">
           <div class="card-image">
             <img src="images/clients/thumbs_MSI.jpg">
           </div>
         </div>
       </div>
-      <div class="col m2 s4 " data-aos="fade-up">
+      <div class="col m2 s4 ">
         <div class="card hoverable">
           <div class="card-image">
             <img src="images/clients/thumbs_Tata.jpg">
           </div>
         </div>
       </div>
-      <div class="col m2 s4 " data-aos="fade-up">
+      <div class="col m2 s4 ">
         <div class="card hoverable">
           <div class="card-image">
             <img src="images/clients/thumbs_Club-Mahindra1.jpg">
@@ -267,8 +261,8 @@
       </div>
     </div>
     <!--container ends-->
-
   </div>
+
   <div class="clearfix"></div>
   <div class="parallax-container">
     <div class="parallax"><img src="images/backdrop.svg"></div>
@@ -287,7 +281,7 @@
       <div class="clearfix"></div>
       <p>
         Copyright © 2010-2014 Argus Entertainment Pvt. Ltd. All rights reserved.
-        <br><span class="grey-text"> Powered by: <a href="http://akshatdhabi.github.io" class="purple-text text-lighten-2">Akshat Dhabi</a></span>
+        <br><span class="grey-text"> Powered by: <a href="http://akshatdhabi.github.io" class="blue-text text-lighten-2">Akshat Dhabi</a></span>
       </p>
     </footer>
   </div>
@@ -295,15 +289,12 @@
 
 
 
-
-  <!--Script Links-->
   <!--Import jQuery before materialize.js-->
-  <script type="text/javascript " src="https://code.jquery.com/jquery-3.2.1.min.js "></script>
-  <script type="text/javascript " src="anims/aos.js "></script>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js "></script>
-  <script type="text/javascript" src="home.js">
+  <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
+  <script type="text/javascript" src="js/home.js">
   </script>
+
 </body>
 
 </html>
