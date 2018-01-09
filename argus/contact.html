@@ -22,11 +22,11 @@
       <!--Drop down content-->
       <ul id="dropdown1" class=" grey darken-4 dropdown-content">
         <li><a href="about.html">About Us</a></li>
-        <li class="act_color"><a href="team.html">Our Team</a></li>
+        <li><a href="team.html">Our Team</a></li>
       </ul>
       <ul id="dropdown2" class=" grey darken-4 dropdown-content">
         <li><a href="about.html">About Us</a></li>
-        <li class="act_color"><a href="team.html">Our Team</a></li>
+        <li><a href="team.html">Our Team</a></li>
       </ul>
       <div class="nav-wrapper grey darken-4">
         <a class="brand-logo right" alt=""><img src="images/logo_big.png" ></a>
@@ -34,27 +34,24 @@
         <ul id="nav-mobile" class="left hide-on-med-and-down ">
           <li><a href="home.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li class="act_color"><a href="#" class="dropdown-button" data-activates="dropdown1">About us<i class="material-icons right">arrow_drop_down</i> </a></li>
+          <li><a href="#" class="dropdown-button" data-activates="dropdown1">About us<i class="material-icons right">arrow_drop_down</i> </a></li>
           <li><a href="clients.html">Our Clients</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li class="act_color"><a href="contact.html">Contact Us</a></li>
         </ul>
         <!-- Mobile sidebar-->
         <ul class="side-nav grey darken-4  " id="mobile">
           <li><a href="home.html">Home</a></li>
           <li><a href="services.html">Services</a></li>
-          <li class="act_color"><a href="#" class="dropdown-button2" data-activates="dropdown2">About us<i class="material-icons right white-text">arrow_drop_down</i> </a></li>
+          <li><a href="#" class="dropdown-button2" data-activates="dropdown2">About us<i class="material-icons right white-text">arrow_drop_down</i> </a></li>
           <li><a href="clients.html">Our Clients</a></li>
-          <li><a href="quote.html">Get a quote</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li class="act_color"><a href="contact.html">Contact Us</a></li>
         </ul>
       </div>
       <!-- Nav bar ends-->
     </nav>
     <!--container ends-->
   </div>
-  <!-- Fixed action button -->
-  <div class="fixed-action-btn click-to-toggle hide-on-small-only">
-    <a href="quote.html" class="waves-effect waves-light btn blue accent-2">Get a quote</a> </div>
+
   <!--parallax-->
   <div class="parallax-container">
     <div class="parallax"><img src="images/backdrop.svg"></div>
@@ -72,22 +69,60 @@
       </div>
 
       <div class="col left m8 s12">
-        <h4 class="blue-text text-lighten-2">Yes! you're taking the right decsion</h4>
-        <p>We would love to help you and are waiting for you to drop us a line.
+        <h4 class="hide-on-small-only blue-text text-lighten-2">Yes! you're taking the right decsion</h4>
+        <p class="hide-on-small-only">We would love to help you and are waiting for you to drop us a line.
           <strong class="blue-text">  Please fill out the following form to get in touch with us or to request a quote.</strong> We’ll be sure to get back to you as soon as we can.</p>
+        <form class=" col s12 m8">
+          <div class="input-field s12 m8 grey darken-4">
+            <i class="material-icons prefix">contacts</i>
+            <label for="name">Your Name</label>
+            <input type="text" id="name">
+          </div>
+          <div class="input-field s12 m8 grey darken-4">
+            <i class="material-icons prefix">contact_mail</i>
+            <label for="mail">Your Email</label>
+            <input type="email" id="mail" class="validate">
+          </div>
+          <div class="input-field s12 m8 grey darken-4">
+            <i class="material-icons prefix">contact_phone</i>
+            <label for="number">Your Mobile No</label>
+            <input type="tel" id="number">
+          </div>
+          <div class="input-field s12 m8 grey darken-4">
+            <i class="material-icons prefix">subject</i>
+            <label for="subject">Subject</label>
+            <input type="text" id="subject">
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="msg" class="materialize-textarea"></textarea>
+              <label for="msg">Your Message</label>
+            </div>
+            <div class="col m3 s5">
+              <input type="submit" value="submit" class="btn waves-effect waves-light">
+            </div>
+
+          </div>
+
       </div>
-
-
+      </form>
+    </div>
+    <div class="row">
+      <div class="col m8 s12">
+        <div class="map-responsive ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.49963524456!2d77.27612553762701!3d28.614783988842756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDM2JzUzLjIiTiA3N8KwMTYnNDAuMyJF!5e0!3m2!1sen!2sin!4v1515490822697"
+            width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+      </div>
     </div>
 
 
 
+
   </div>
 
 
 
-  </div>
-  </div>
   <!--parallax-->
   <div class="parallax-container">
     <div class="parallax"><img src="images/backdrop.svg"></div>
