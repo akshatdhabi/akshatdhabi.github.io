@@ -88,6 +88,22 @@ i:hover {
   color: #42a5f5;
 }
 
+.main .card-image img {
+  max-height: 300px;
+  max-width: 273px;
+  margin: 0 auto;
+  border: none;
+}
+
+.main h4, .main h5, .main h6 {
+  text-align: center;
+  font-weight: 300;
+}
+
+.main .card-image {
+  border: none;
+}
+
 footer {
   margin-bottom: 5%;
   padding-left: 2%;

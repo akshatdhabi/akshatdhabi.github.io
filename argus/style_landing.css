@@ -31,10 +31,10 @@ p {
 .logo {
   background: url(images/logo_big.png)no-repeat;
   background-size: cover;
-  height: 80px;
-  width: 80px;
+  height: 70px;
+  width: 220px;
   /* position: absolute; */
-  margin-top: 3%;
+  margin-top: 10%;
   margin-bottom: -2%;
 }
 
@@ -95,11 +95,6 @@ footer ul li a i:active {
 
 @media (max-width:480px) {
   .logo {
-    background: url(images/logo_small.png)no-repeat;
-    background-size: cover;
-    height: 70px;
-    width: 70px;
-    /* position: absolute; */
     margin-top: 10%;
     margin-bottom: -15px;
   }
@@ -117,6 +112,6 @@ footer ul li a i:active {
 
 @media (min-width:1920px) {
   .logo {
-    margin-top: 40%;
+    margin-top: 30%;
   }
 }
