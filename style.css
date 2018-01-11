@@ -1,81 +1,56 @@
-html, body, {
-  margin: 0px;
-  padding: 0px;
+html, body {
+  padding: 0;
+  margin: 0;
 }
 
-#particles-js {
-  background: #fff;
-  max-height: 400px;
-  min-height: 350px;
-  width: 100%;
-  background-size: cover;
-  background-position: 50% 50%;
-  /* display: block; */
-  overflow: hidden;
-}
-
-.display_image {
-  max-width: 300px;
-  max-height: 300px;
-  margin-right: 2%;
-}
-
-nav {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
-
-nav li a {
+body {
+  font-family: Roboto, sans-serif;
   color: black;
 }
 
-nav .brand-logo {
-  margin-left: 1%;
+#particle {
+  max-width: 100%;
+  background: rgba(0, 191, 166, 1);
+  background: -moz-linear-gradient(45deg, rgba(0, 191, 166, 1) 0%, rgba(1, 88, 155, 1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(0, 191, 166, 1)), color-stop(100%, rgba(1, 88, 155, 1)));
+  background: -webkit-linear-gradient(45deg, rgba(0, 191, 166, 1) 0%, rgba(1, 88, 155, 1) 100%);
+  background: -o-linear-gradient(45deg, rgba(0, 191, 166, 1) 0%, rgba(1, 88, 155, 1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(0, 191, 166, 1) 0%, rgba(1, 88, 155, 1) 100%);
+  background: linear-gradient(45deg, rgba(0, 191, 166, 1) 0%, rgba(1, 88, 155, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00bfa6', endColorstr='#01589b', GradientType=1);
+  background-size: cover;
+  background-position: 50% 50%;
+  position: relative;
+  overflow: hide;
+}
+
+nav {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  height: 50px;
+  position: fixed;
 }
 
 .heading {
-  font-weight: 300;
-  font-size: 280%;
-}
-
-.wrap {
-  top: 10%;
   position: absolute;
-  max-height: 500px;
-  max-width: 90%;
-  left: 10%;
+  font-weight: 300;
+  font-size: 300%;
+  display: inline;
+  color: white;
+  top: 30%;
+  left: 15%:
 }
 
-.intro {
-  padding-top: 1%;
-  height: 1000px;
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 480px) {
+@media (max-width:900px) {
   .heading {
-    /* color: red; */
-    font-weight: 300;
-    font-size: 200%;
-    text-align: center;
-  }
-  .wrap {
-    left: 5%;
-  }
-  .mob {
-    font-weight: 600;
-  }
-}
-
-@media (max-width: 800px) and (min-width:480px) {
-  .heading {
-    /* color: red; */
-    font-weight: 300;
+    top: 20%;
     font-size: 200%;
   }
-  .mob {
-    font-weight: 600;
+}
+
+@media (max-width:500px) {
+  .heading {
+    top: 25%;
+    font-size: 200%;
   }
 }
