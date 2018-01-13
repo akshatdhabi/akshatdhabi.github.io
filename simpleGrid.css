@@ -5,6 +5,9 @@ html {
 body {
   padding: 0;
   margin: 0;
+  background: white;
+  font-family: sans-serif;
+  /* color: white; */
 }
 
 *, *:before, *:after {
@@ -13,7 +16,7 @@ body {
 
 .container {
   width: 80%;
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -26,97 +29,103 @@ body {
   clear: both;
 }
 
-[class*='m-'] {
+[class*='med-'] {
   width: 8.33333%;
   float: left;
   min-height: 1px;
   padding: 0.5% 0.5%;
 }
 
-[class*='s-'] {
+[class*='sml-'] {
   width: 8.33333%;
   float: left;
   min-height: 1px;
   padding: 0.5% 0.5%;
+}
+
+.box {
+  padding: 10px;
+  background: #ccc;
+  text-align: center;
 }
 
 @media screen and (max-width:768px) {
   .container {
     width: 95%;
   }
-  .s-1 {
+  .sml-1 {
     width: 8.33333%;
   }
-  .s-2 {
+  .sml-2 {
     width: 16.66667%;
   }
-  .s-3 {
+  .sml-3 {
     width: 25%;
   }
-  .s-4 {
+  .sml-4 {
     width: 33.33333%;
   }
-  .s-5 {
+  .sml-5 {
     width: 41.66667%;
   }
-  .s-6 {
+  .sml-6 {
     width: 50%;
   }
-  .s-7 {
+  .sml-7 {
     width: 58.33333%;
   }
-  .s-8 {
+  .sml-8 {
     width: 66.66667%;
   }
-  .s-9 {
+  .sml-9 {
     width: 75%;
   }
-  .s-10 {
+  .sml-10 {
     width: 83.33333%;
   }
-  .s-11 {
+  .sml-11 {
     width: 91.66667%;
   }
-  .s-12 {
+  .sml-12 {
     width: 100%;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .m-1 {
+  .med-1 {
     width: 8.33333%;
   }
-  .m-2 {
+  .med-2 {
     width: 16.66667%;
   }
-  .m-3 {
+  .med-3 {
     width: 25%;
   }
-  .m-4 {
+  .med-4 {
     width: 33.33333%;
   }
-  .m-5 {
+  .med-5 {
     width: 41.66667%;
   }
-  .m-6 {
+  .med-6 {
     width: 50%;
   }
-  .m-7 {
+  .med-7 {
     width: 58.33333%;
   }
-  .m-8 {
+  .med-8 {
     width: 66.66667%;
   }
-  .m-9 {
+  .med-9 {
     width: 75%;
   }
-  .m-10 {
+  .med-10 {
     width: 83.33333%;
   }
-  .m-11 {
+  .med-11 {
     width: 91.66667%;
   }
-  .m-12 {
+  .med-12 {
     width: 100%;
   }
 }
