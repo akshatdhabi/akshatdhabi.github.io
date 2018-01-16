@@ -1,52 +1,61 @@
 $(function() {
-  particlesJS.load('particle', 'particles.json', function() {
-    console.log('callback - particles.js config loaded');
-  });
-  //calling hero resize function
-  hero();
-  //sidenav opener
+
+  var menuCounter = 0;
+  //Screen resize function
+
+  function screen() {
+    $("#hero").css({
+      width: jQuery(window).width(),
+      height: jQuery(window).height()
+    });
+    $("#particles").css({
+      width: jQuery(window).width(),
+      height: jQuery(window).height()
+    });
+  }
+  screen();
+
   jQuery(window).resize(function() {
-    var x = jQuery(window).height();
-    if (x <= 300) {
-      return x;
-    } else {
-      hero();
+    screen();
+    if (menuCounter == 1) {
+      openSidebar();
     }
   });
-  $(".menu-icon").click(function() {
-    sideNavOpen();
-  });
-  $(".closeButton").click(function() {
-    sideNavClose();
+  $(".menu_mobile").click(function() {
+    openSidebar();
   });
 
 
+
+  $(".close").click(function() {
+    closeSidebar();
+  });
+  //sidebar open
+
+  function openSidebar() {
+    menuCounter = 1;
+    $(".sidebar").css({
+      width: jQuery(window).width()
+    });
+
+    $(".sidebar ul").css({
+      opacity: 1
+    });
+  }
+
+  function closeSidebar() {
+    menuCounter = 0;
+    $(".sidebar").css({
+      width: 0
+    });
+    $(".sidebar ul").css({
+      opacity: 0
+    });
+  }
+
+  //calling particles
+  particlesJS.load('particles', 'particles.json', function() {
+    console.log('callback - particles.js config loaded');
+  });
 
 });
-
-
-
-function hero() {
-  $("#particle").css({
-    width: jQuery(window).width(),
-    height: jQuery(window).height()
-  });
-}
-
-function sideNavOpen() {
-  $(".sidebar").css({
-    width: "250px"
-  });
-  $(".content").css({
-    eft: "250px"
-  });
-
-}
-
-function sideNavClose() {
-  $(".sidebar").css({
-    width: "0"
-  });
-
-
-}
