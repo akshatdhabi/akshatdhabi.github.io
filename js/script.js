@@ -1,7 +1,7 @@
 $(function() {
 
-  var menuCounter = 0;
   //Screen resize function
+  var sideBarOpen = false;
 
   function screen() {
     $("#hero").css({
@@ -17,41 +17,63 @@ $(function() {
 
   jQuery(window).resize(function() {
     screen();
-    if (menuCounter == 1) {
-      openSidebar();
-    }
-  });
-  $(".menu_mobile").click(function() {
-    openSidebar();
+    closeSidebar();
   });
 
+  $(".menu_mobile").click(function(event) {
+    openSidebar();
+  });
 
 
   $(".close").click(function() {
     closeSidebar();
   });
   //sidebar open
+  function openSidebar(event) {
+    sideBarOpen = true;
 
-  function openSidebar() {
-    menuCounter = 1;
     $(".sidebar").css({
-      width: jQuery(window).width()
+      width: jQuery(window).width() / 1.5
     });
 
     $(".sidebar ul").css({
+      transition: "all 0.2s 0.3s",
       opacity: 1
     });
+
+    $("body").css({
+      overflowY: "hidden"
+    });
+
   }
 
   function closeSidebar() {
-    menuCounter = 0;
+    sideBarOpen = false;
     $(".sidebar").css({
       width: 0
     });
+
     $(".sidebar ul").css({
+      transition: "0s",
       opacity: 0
     });
+    $("body").css({
+      overflowY: "auto"
+    });
   }
+
+  //sidedbar nav_scroll
+  $(window).on("scroll", function() {
+    if ($(this).scrollTop()) {
+      $("nav").css({
+        background: "#0d1f22"
+      });
+    } else {
+      $("nav").css({
+        background: "none"
+      });
+    }
+  });
 
   //calling particles
   particlesJS.load('particles', 'particles.json', function() {
