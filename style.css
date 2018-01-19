@@ -47,9 +47,9 @@ nav {
 
 .sidebar ul li {
   margin: 0;
-  padding: 8%;
   text-align: left;
   transition: 0.4s;
+  padding: 8%;
 }
 
 .sidebar ul li:hover, .sidebar .active {
@@ -270,13 +270,16 @@ nav ul li a:hover, nav ul li .active {
   .logo {
     padding-left: 2%;
   }
+  nav {
+    height: 50px;
+  }
   nav ul {
     padding-right: 2%;
   }
   nav ul li {
     text-align: center;
     color: #e5d960;
-    margin-top: 0px;
+    margin-top: -1px;
   }
   nav ul li a {
     font-size: 1em;
