@@ -83,6 +83,7 @@ $(function() {
 
   //sidedbar nav_scroll
   $(window).on("scroll", function() {
+    closeSidebar();
     if ($(this).scrollTop()) {
       $("nav").css({
         background: "#0d1f22"
