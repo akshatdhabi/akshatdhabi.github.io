@@ -1,0 +1,97 @@
+body {
+  background: #E9E9E9;
+}
+
+@keyframes thunder {
+  0% {
+    background: #000019;
+  }
+  5% {
+    background: yellow;
+  }
+  10% {
+    background: #000019;
+  }
+  15% {
+    background: yellow;
+  }
+  20% {
+    background: #000019;
+  }
+  25% {
+    background: yellow;
+  }
+  30% {
+    background: #000019;
+  }
+  35% {
+    background: yellow;
+  }
+  40% {
+    background: #000019;
+  }
+  100% {
+    background: #660000;
+  }
+}
+
+* {
+  transition: all 1s linear;
+}
+
+.bg {
+  background: #660000;
+  animation: thunder 5s ease-in-out;
+}
+
+.line {
+  fill: rgba(0, 0, 0, 0.5);
+}
+
+.image {
+  height: 80vh;
+}
+
+.image svg {
+  height: inherit;
+  width: 100%;
+}
+
+.buttons {
+  margin: 10px auto;
+  max-width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  padding: 20px;
+  color: #fff;
+  font-size: 1.3em;
+  border: 0;
+  background: #56BCBE;
+  box-shadow: none;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+
+button:active {
+  background: red;
+}
+
+.brow {
+  transform-origin: center;
+}
+
+@media (max-width:768px) {
+  button {
+    margin: 5px 50px;
+    padding: 10px;
+  }
+  .image {
+    height: 70vh;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+}
