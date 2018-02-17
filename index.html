@@ -4,100 +4,199 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#0d1f22" />
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#0d1f22">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#0d1f22">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!--Import Google Roboto Font-->
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="theme-color" content="#0983a9" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
-  <!-- <link rel="stylesheet" href="simpleGrid.css"> -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" type="images/png" href="../images/favicon.png" />
+  <link rel="stylesheet" href="css/style.css">
   <title>Akshat Dhabi</title>
 </head>
-<header>
-  <!-- Hero class -->
-  <!--Mobile Navbar-->
-  <div class="sidebar">
-    <div class="close">&times;</div>
-    <div>
-      <ul>
-        <li class="active"><a href="1">Home</a></li>
-        <li><a href="2">About</a></li>
-        <li><a href="3">Projects</a></li>
-        <li><a href="4">Contact Me</a></li>
-      </ul>
-    </div>
-  </div>
-  <div id="hero">
-    <!-- Navtigation bar -->
-    <nav>
-      <div class="menu_mobile">
-        <i class="fa fa-bars"></i>
-      </div>
-      <div class="logo">
-        <img src="img/logo_nav.svg" alt="">
-      </div>
-      <ul>
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact Me</a></li>
-      </ul>
-    </nav>
-
-    <!-- Navigation bar end -->
-    <!-- Particle wrapper -->
-    <div class="container hero-content">
-      <!--Logo-->
-      <div class="logo_hero">
-        <img src="img/logo.svg" class="logo" alt="">
-      </div>
-      <!--Content-->
-      <h1 class=" intro">
-        Hi, I am Akshat Dhabi. I am a Front-end designer/developer.
-          </h1>
-      <a href="#" class="explore_btn">EXPLORE</a>
-    </div>
-    <div id="particles"></div>
-  </div>
-</header>
-<div class="container">
-  <div class="row">
-    <div class="card med-4 sml-12">
-      <img src="img/1.jpg" alt="">
-      <h3>Card Heading</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, quisquam!</p>
-    </div>
-    <div class="card med-4 sml-12">
-      <img src="img/1.jpg" alt="">
-      <h3>Card Heading</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, quisquam!</p>
-    </div>
-    <div class="card med-4 sml-12">
-      <img src="img/1.jpg" alt="">
-      <h3>Card Heading</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, quisquam!</p>
-    </div>
-  </div>
-  <div class="card">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita tempore voluptatum, et est placeat dolores aliquam amet odit dicta natus rem quasi error fugiat ea eveniet eligendi consectetur odio eos quia, repudiandae accusamus. Corporis sequi
-      dignissimos, repudiandae at nam nesciunt eius nulla atque architecto adipisci, doloribus magni veniam ut. Architecto?</p>
-  </div>
-
-  <footer>&copy Akshat Dhabi</footer>
-</div>
-
 
 <body>
+  <!--Nav bar-->
+  <div class="menuBar">
+    <span class="menuIcon">
+      <svg width="30" height="30">
+      <path d="M0,5 30,5"  stroke-width="4"/>
+      <path d="M0,14 30,14" stroke-width="4"/>
+      <path d="M0,23 30,23"  stroke-width="4"/>
+      </svg>
+  </span>
+  </div>
+  <div class="sideMenu">
+    <div class="sidebar-top">
+      <div><img src="../images/logo_nav.svg" alt=""></div>
+      <div><a class="closeButton">&times;</a></div>
+    </div>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">About</a></li>
+      <li><a href="">Portfolio</a></li>
+      <li><a href="">Contact Me</a></li>
+    </ul>
+    <div class="quote">
+      <h4>
+        “When you don't create things, you become defined by your tastes rather than ability. your tastes only narrow & exclude people. so create.”
+      </h4>
+      <h5>_why</h5>
+    </div>
+  </div>
+
+  <div class="hero">
+    <div class="hero-text">
+      <h1><span class="intro">Hi, I’m</span> Akshat Dhabi.</h1>
+      <h2>FRONTEND DESIGNER & DEVELOPER</h2>
+      <a class="hero-button" href="">EXPLORE</a>
+    </div>
+    <div class="hero-image">
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="heading">
+      <h1>About Me</h1>
+      <p>Get to know me a little</p>
+    </div>
+
+    <div class="about">
+      <div><img src="../images/akshat_dhabi.jpg" alt=""></div>
+      <div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ratione nam, eveniet nesciunt assumenda deleniti, aut amet repellendus exercitationem eos, doloribus aliquid aperiam odio, sed consequatur illo possimus odit ducimus porro molestias
+          sit laudantium. Incidunt, ut, laborum. Aliquam velit similique doloribus officiis, voluptas accusantium nihil explicabo autem eum repudiandae facilis.</p>
+      </div>
+    </div>
+
+    <div class="heading">
+      <h2>My Skills
+      </h2>
+      <p>What sets me apart</p>
+    </div>
+
+    <div class="promo">
+      <div>
+        <i class="fa fa-code "></i>
+        <h2>Code</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tempora dolorem doloribus alias eaque. Numquam rerum expedita error nam inventore!</p>
+      </div>
+      <div>
+        <i class="fa fa-laptop"></i>
+        <h2>Responsive Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tempora dolorem doloribus alias eaque. Numquam rerum expedita error nam inventore!</p>
+      </div>
+      <div>
+        <i class="fa fa-lightbulb-o"></i>
+        <h2>Creativity</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tempora dolorem doloribus alias eaque. Numquam rerum expedita error nam inventore!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="heading cv">
+    <a class="button" href="">DOWNLOAD CV (.pdf)</a>
+  </div>
+
+<div class="projects">
+
+  <div class="heading">
+    <h1>My Work</h1>
+    <p>My skills in action.</p>
+  </div>
+
+  <div class="container">
+      <div class="project">
+          <div class="image"><img src="../images/1.png" alt=""></div>
+          <div class="content">
+            <h3>Blues CSS Framework</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit 
+                consequatur consequuntur reprehenderit quod qui minima obcaecati culpa 
+                laudantium cupiditate corrupti nesciunt dolorem, molestias fugiat vel 
+                repudiandae excepturi blanditiis delectus, laborum aperiam quae quasi inventore! 
+                Magni, incidunt dolore cum autem debitis molestiae possimus repellat itaque libero. 
+                Obcaecati placeat doloribus veniam. </p> <br>
+            <a class="button" href="">Github</a>
+            <a class="button" href="">Visit</a>
+            
+          </div>
+        </div>
+
+
+        <div class="project p2">
+            <div class="image"><img src="../images/1.png" alt=""></div>
+            <div class="content">
+              <h3>Blues CSS Framework</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit 
+                  consequatur consequuntur reprehenderit quod qui minima obcaecati culpa 
+                  laudantium cupiditate corrupti nesciunt dolorem, molestias fugiat vel 
+                  repudiandae excepturi blanditiis delectus, laborum aperiam quae quasi inventore! 
+                  Magni, incidunt dolore cum autem debitis molestiae possimus repellat itaque libero. 
+                  Obcaecati placeat doloribus veniam. </p> <br>
+              <a class="button" href="">Github</a>
+              <a class="button" href="">Visit</a>
+              
+            </div>
+          </div>
+
+          <div class="project">
+              <div class="image"><img src="../images/1.png" alt=""></div>
+              <div class="content">
+                <h3>Blues CSS Framework</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias odit 
+                    consequatur consequuntur reprehenderit quod qui minima obcaecati culpa 
+                    laudantium cupiditate corrupti nesciunt dolorem, molestias fugiat vel 
+                    repudiandae excepturi blanditiis delectus, laborum aperiam quae quasi inventore! 
+                    Magni, incidunt dolore cum autem debitis molestiae possimus repellat itaque libero. 
+                    Obcaecati placeat doloribus veniam. </p> <br>
+                <a class="button" href="">Github</a>
+                <a class="button" href="">Visit</a>
+                
+              </div>
+            </div>
+
+  </div>
+
+</div>
+  
+<div class="project-graphic">
+
+    <div class="container">
+      
+        <div class="heading">
+            <h1>Graphic Design</h1>
+            <p>My love for aesthetics</p>
+          </div>
+    
+        <div class="gallery">
+          <div class="g1">
+              <div><img src="../images/art3.jpg" alt=""></div>
+              <div><img src="../images/art1.jpg" alt=""></div>
+          </div>
+          <div class="g2">
+              <div><img src="../images/art4.jpg" alt=""></div>
+          </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+  <p>LETS SOCIALIZE <br></p>
+  <ul>
+    <li><a href=""><i class="fa fa-github"></i></a></i></li>
+    <li><a href=""><i class="fa fa-codepen"></i></a></i></li>
+    <li><a href=""><i class="fa fa-linkedin"></i></a></i></li>
+    <li><a href=""><i class="fa fa-facebook"></i></a></i></li>
+    <li><a href=""><i class="fa fa-twitter"></i></a></i></li>
+    <li><a href=""><i class="fa fa-instagram"></i></a></li>
+  </ul>
+  <p><i class="fa envelope-o"></i> akshatdhabi@gmail.com P:+91 7726022223</p>
+</footer>
+
+
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="js/vendor/particles.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
